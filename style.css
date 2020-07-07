@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import url('https://fonts.googleapis.com/css2?family=Sahitya&display=swap');
 .playboard{
   height: 550px;
   width : 550px;
@@ -14,20 +15,21 @@
 }
 .heading{
   margin-top:30px;
-  margin-left: 20px;
+  margin-left:30px;
   font-size: 60px;
   font-family: 'Piedra', cursive;
+
 }
 .players{
   height: 200px;
   width : 400px;
-  margin: 10px 50px;
+  margin: 10px 60px;
   display:none;
 }
 .players-2{
   height: 200px;
   width : 400px;
-  margin: 10px 50px;
+  margin: 10px 60px;
   display:none;
 }
 #astro2,#astro {
@@ -49,43 +51,87 @@
 }
 
 .player-no{
-  width:100px;
+  width:150px;
   margin:10px 30px 10px 80px;
-  font-family: 'Piedra', cursive;
-    border-radius: 5px;
+  font-family: 'Sahitya', serif;
+  border-radius: 5px;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
 }
 .newgame-1{
-  width:100px;
-  margin:10px 30px 10px 200px;
-  font-family: 'Piedra', cursive;
-    border-radius: 5px;
-    display:none;
+  width:150px;
+  margin:5px 30px 5px 205px;
+  border-radius: 5px;
+  display:none;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
 }
 .newgame-2{
-  width:100px;
-  margin:10px 30px 10px 200px;
-  font-family: 'Piedra', cursive;
-    border-radius: 5px;
-    display:none;
+  width:150px;
+  margin:20px 30px 20px 190px;
+  border-radius: 5px;
+  display:none;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
 }
 .suggestion{
-  width:100px;
-  margin:10px 30px 10px 200px;
-  font-family: 'Piedra', cursive;
+  width:180px;
+  margin:10px 30px 10px 175px;
     border-radius: 5px;
     display: none;
+    background-color: #000000;
+    color:#fff;
+    border:none;
+    padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+   font-size: 15px;
+   font-family: 'Sahitya', serif;
 }
 #ai-button,#play-x{
   margin-left:5px;
   margin-right: 150px;
   border-radius: 5px;
-  font-family: 'Piedra', cursive;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
 }
 #astro-button,#play-o{
   border-radius: 5px;
-  font-family: 'Piedra', cursive;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+ font-size: 15px;
+ font-family: 'Sahitya', serif;
 }
-
+#play-o, #play-x{
+  border-radius: 50%;
+}
 
 .depth-button{
   margin: 40px 30px;
@@ -93,11 +139,25 @@
   display : none;
 
 }
-.depth{
-  margin: 5px 20px 5px 45px;
-  border-radius: 5px;
-  font-family: 'Piedra', cursive;
+#level{
+  margin-right: 40px;
 }
+.depth{
+
+  margin: 5px 0 ;
+  border-radius: 5px;
+  width:110px;
+  background-color: #000000;
+  color:#fff;
+  border:none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
+}
+
+
 td {
   width: 100px;
   height:100px;
@@ -113,7 +173,8 @@ table{
   left:50%;
   margin-left: -155px;
   top :120px;
-  background-color: rgba(173, 235, 235,0.8);
+  background-color: #ffffff;
+  background-color: rgb(173, 235, 235,0.8);
 }
 table tr:first-child td{
   border-top: 0;
@@ -164,7 +225,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Open Sans Condensed', sans-serif;
-    background-color:#80ffff;
+  background-color: #00cc99;
+
 
 }
 
@@ -213,7 +275,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgba(204, 204, 179,0.8);
+    background-color: rgb(204, 204, 179,0.8);
 }
 .btn-two::after {
     content: '';
@@ -226,7 +288,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgba(204, 204, 179,0.8);
+    background-color: rgb(204, 204, 179,0.8);
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
