@@ -52,7 +52,7 @@
 
 .player-no{
   width:150px;
-  margin:10px 30px 10px 80px;
+  margin:10px 20px 10px 75px;
   font-family: 'Sahitya', serif;
   border-radius: 5px;
   background-color: #000000;
@@ -97,7 +97,7 @@
   margin:10px 30px 10px 175px;
     border-radius: 5px;
     display: none;
-    background-color: #000000;
+    background-color: #000;
     color:#fff;
     border:none;
     padding: 15px 30px;
@@ -173,7 +173,7 @@ table{
   left:50%;
   margin-left: -155px;
   top :120px;
-  background-color: rgba(173, 235, 235,0.8);
+  background-color:rgba(173, 235, 235,0.8);
 }
 table tr:first-child td{
   border-top: 0;
