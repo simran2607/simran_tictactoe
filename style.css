@@ -113,7 +113,7 @@ table{
   left:50%;
   margin-left: -155px;
   top :120px;
-  background-color: rgb(173, 235, 235,0.8);
+  background-color: rgba(173, 235, 235,0.8);
 }
 table tr:first-child td{
   border-top: 0;
@@ -213,7 +213,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgb(204, 204, 179,0.8);
+    background-color: rgba(204, 204, 179,0.8);
 }
 .btn-two::after {
     content: '';
@@ -226,7 +226,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgb(204, 204, 179,0.8);
+    background-color: rgba(204, 204, 179,0.8);
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
