@@ -33,6 +33,7 @@ $("button[class*=player-no]").click(function(){
    else if(player === "two-p")
    {newgame2();
     starting.MAX_DEPTH =1000000;
+    starting.play="X";
    }
    $(".player-no").fadeOut(1000);
 });
