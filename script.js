@@ -8,6 +8,7 @@ starting = function(){
  const aiPlayer = 'X';
  var MAX_DEPTH;
  const winCombi = [[0,1,2], [3,4,5], [6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]] ;
+ var running;
  return{
    beginPlayer:beginPlayer,
    player:player,
@@ -17,7 +18,8 @@ starting = function(){
    humanPlayer:humanPlayer,
    aiPlayer:aiPlayer,
    MAX_DEPTH:MAX_DEPTH,
-   winCombi: winCombi
+   winCombi: winCombi,
+  running:running
  }
 }
 
@@ -35,6 +37,7 @@ $("button[class*=player-no]").click(function(){
     starting.MAX_DEPTH =1000000;
     starting.play="X";
    }
+   starting.running=false;
    $(".player-no").fadeOut(1000);
 });
 
@@ -71,11 +74,41 @@ function gameFinish(){
   $("button[class*=newgame-1]").click(function(){
 
     startGame();
+   if(starting.running)
+      {gameFinish();
+        $("#robot").fadeIn(1000);
+        $("#astro").fadeIn(1000);
+        $("#astro1").fadeIn(1000);
+        $("#astro2").fadeIn(1000);
+      const cells = document.querySelectorAll('.cell');
+        for(var i=0; i<cells.length; i++)
+        {
+          cells[i].innerText ='';
+          cells[i].style.removeProperty('background-color');
+          cells[i].removeEventListener('click', turnClick, false);
+          cells[i].removeEventListener('click', switchPlayer, false);
+        }
+      }
   });
 
   $("button[class*=newgame-2]").click(function(){
 
       beginGame();
+   if(starting.running)
+      {gameFinish();
+        $("#robot").fadeIn(1000);
+        $("#astro").fadeIn(1000);
+        $("#astro1").fadeIn(1000);
+        $("#astro2").fadeIn(1000);
+      const cells = document.querySelectorAll('.cell');
+        for(var i=0; i<cells.length; i++)
+        {
+          cells[i].innerText ='';
+          cells[i].style.removeProperty('background-color');
+          cells[i].removeEventListener('click', turnClick, false);
+          cells[i].removeEventListener('click', switchPlayer, false);
+        }
+      }
 });
 
 $("div[class*=btn]").click(function(){
