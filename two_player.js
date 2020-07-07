@@ -11,7 +11,7 @@ const cells = document.querySelectorAll('.cell');
 }
 
 function switchPlayer(square){
-
+starting.running=true;
     if (typeof starting.board[square.target.id] == 'number') {
         playaMove(square.target.id,starting.play);
 
