@@ -17,8 +17,6 @@ function startGame(){
      {cells[i].innerText = starting.aiPlayer;
     }
 
-
-
    }
    starting.player = starting.beginPlayer;
    starting.beginPlayer="blank";
@@ -35,7 +33,7 @@ function lastMove()
 
 
   function turnClick(square){
-
+   starting.running =true;
    if (typeof starting.board[square.target.id] == 'number') {
     turn(square.target.id, starting.humanPlayer);
 		if (!checkTie() && !checkWin(starting.board, starting.humanPlayer)) {
@@ -77,7 +75,7 @@ function gameOver(gameWon,playerNum) {
 	for (var i = 0; i < cells.length; i++) {
 
     cells[i].removeEventListener('click', turnClick, false);
-
+    cells[i].removeEventListener('click', switchPlayer, false);
 
 	}
   if(playerNum ==="one")
@@ -114,7 +112,6 @@ function declareWinner(who) {
 
 function emptySquares() {
 
-
   return starting.board.filter((elm, i) => i===elm);
 
 }
@@ -125,7 +122,6 @@ if(starting.MAX_DEPTH ===100000000){
   return starting.bestMove;
 }
 else{
-
    return minimax(starting.board,starting.aiPlayer,0);
 }
 }
