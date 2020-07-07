@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="width=device-width, user-scalable=no initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <span class="heading">Tic Tac Toe</span>
+  <div class="players">
+  <img src="images/robo.png" alt="ai" id="robot">
+    <img src="images/astronaut.png" alt="astronaut" id="astro">
+</div>
+<div class="players-2">
+  <img src="images/astronaut.png" alt="astronaut-1" id="astro1">
+  <img src="images/astro.png" alt="astronaut-2" id="astro2">
+</div>
+  <div class="player-number">
+    <button type="button" class="player-no" id="one-p">1 Player</button>
+    <button type="button" class="player-no" id="two-p">2 Players</button>
+  </div>
+
+
+<div class="starting-player">
+  <span>Starting player: </span>
+  <button class="start-p" id="ai-button">AI</button>
+  <button class="start-p" id="astro-button">Astronaut</button>
+</div>
+<div class="starting-2-player">
+  <span>Starting player: </span>
+  <button class="start-play" id="play-x">X</button>
+  <button class="start-play" id="play-o">O</button>
+</div>
+<div class="depth-button">
+  <span>Level: </span>
+  <button type="button" class="depth" id="easy">easy</button>
+  <button type="button" class="depth" id="medium">medium</button>
+  <button type="button"  class="depth" id="hard">hard</button>
+</div>
+<button type="button" class="newgame-1" id="one-player">New Game</button>
+<button type="button" class="newgame-2" id="two-player">New Game</button>
+<button type="button" name="button" class="suggestion">suggested move</button>
+    <div class="playboard">
+    <table>
+      <tr>
+        <td class ="cell" id="0"> </td>
+         <td class ="cell" id="1"> </td>
+         <td class ="cell" id="2"> </td>
+        </tr>
+      <tr>
+        <td class ="cell" id="3"> </td>
+         <td class ="cell" id="4"> </td>
+         <td class ="cell" id="5"> </td>
+        </tr>
+      <tr>
+        <td class ="cell" id="6"> </td>
+         <td class ="cell" id="7"> </td>
+         <td class ="cell" id="8"> </td>
+        </tr>
+
+
+      </table>
+
+<div class="endgame">
+           <div class="text">
+           </div>
+     <div class="box-2">
+             <div class="btn btn-two" >
+               <span>play again</span>
+             </div>
+     </div>
+</div>
+</div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="one_player.js"></script>
+    <script type="text/javascript" src="two_player.js"></script>
+
+  </body>
+</html>>
