@@ -1,8 +1,3 @@
-/*(function() {
-  var beginPlayer;
-    window['beginPlayer'] = beginPlayer;
-})();
-*/
 
 function startGame(){
  const cells = document.querySelectorAll('.cell');
