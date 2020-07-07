@@ -173,7 +173,7 @@ table{
   left:50%;
   margin-left: -155px;
   top :120px;
-  background-color: rgb(173, 235, 235,0.8);
+  background-color: rgba(173, 235, 235,0.8);
 }
 table tr:first-child td{
   border-top: 0;
@@ -191,8 +191,6 @@ table tr td:last-child{
 .endgame{
   display:none;
   width:200px;
-
-
   position: relative;
   height:75px;
   background-color: rgb(255, 204, 255);
@@ -202,15 +200,11 @@ table tr td:last-child{
   padding-top: 50px;
   text-align:center;
   border-radius: 5px;
-
   font-size: 2em;
-
   left:50%;
   margin-left: -100px;
   top :-115px;
 }
-
-/*button play again*/
 
 
 
