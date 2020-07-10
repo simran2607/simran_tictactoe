@@ -3,22 +3,18 @@
 .playboard{
   height: 550px;
   width : 550px;
-
   position:absolute;
   left:45%;
- border-radius: 50px 50px 50px 50px;
- margin-top: 50px;
- background-image: url("images/sketch.jpg");
- background-size: cover;
-
-
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 50px;
+  background-image: url("images/backgrd.jpg");
+  background-size: cover;
 }
 .heading{
   margin-top:30px;
   margin-left:30px;
   font-size: 60px;
   font-family: 'Piedra', cursive;
-
 }
 .players{
   height: 200px;
@@ -38,7 +34,6 @@
   margin: 20px;
   float:right;
 }
-
 #robot,#astro1{
   height: 150px;
   width: 150px;
@@ -49,7 +44,6 @@
   font-family: 'Piedra', cursive;
   display:none;
 }
-
 .player-no{
   width:150px;
   margin:10px 20px 10px 55px;
@@ -95,16 +89,16 @@
 .suggestion{
   width:180px;
   margin:10px 30px 10px 175px;
-    border-radius: 5px;
-    display: none;
-    background-color: #000;
-    color:#fff;
-    border:none;
-    padding: 15px 30px;
+  border-radius: 5px;
+  display: none;
+  background-color: #000;
+  color:#fff;
+  border:none;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
-   font-size: 15px;
-   font-family: 'Sahitya', serif;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
 }
 #ai-button,#play-x{
   margin-left:5px;
@@ -124,26 +118,23 @@
   color:#fff;
   border:none;
   padding: 10px 20px;
-text-align: center;
-text-decoration: none;
- font-size: 15px;
- font-family: 'Sahitya', serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Sahitya', serif;
 }
 #play-o, #play-x{
   border-radius: 50%;
 }
-
 .depth-button{
   margin: 40px 30px;
   font-family: 'Piedra', cursive;
   display : none;
-
 }
 #level{
   margin-right: 40px;
 }
 .depth{
-
   margin: 5px 0 ;
   border-radius: 5px;
   width:110px;
@@ -156,8 +147,6 @@ text-decoration: none;
   font-size: 15px;
   font-family: 'Sahitya', serif;
 }
-
-
 td {
   width: 100px;
   height:100px;
@@ -165,7 +154,6 @@ td {
   text-align: center;
   cursor: pointer;
   font-size: 70px;
-
 }
 table{
   border-collapse: collapse;
@@ -181,7 +169,6 @@ table tr:first-child td{
 table tr:last-child td{
   border-bottom: 0;
 }
-
 table tr td:first-child{
   border-left: 0;
 }
@@ -205,11 +192,7 @@ table tr td:last-child{
   margin-left: -100px;
   top :-115px;
 }
-
-
-
-html,
-body {
+html,body {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -219,32 +202,22 @@ body {
   flex-wrap: wrap;
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: #00cc99;
-
-
 }
-
-
 div[class*=box] {
-    height: 33.33%;
-    width: 60%;
+  height: 33.33%;
+  width: 60%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
-
 .btn {
     line-height: 50px;
     height: 40px;
     text-align: center;
     width: 200px;
     cursor: pointer;
-
-
 }
-
 .btn-two {
     color: #FFF;
     transition: all 0.5s;
@@ -268,7 +241,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgb(204, 204, 179,0.8);
+    background-color: rgba(204, 204, 179,0.8);
 }
 .btn-two::after {
     content: '';
@@ -281,7 +254,7 @@ div[class*=box] {
     transition: all 0.5s;
     border: 2px solid rgba(255,255,255,0.4);
     background-color: rgba(255,255,254,0.1);
-    background-color: rgb(204, 204, 179,0.8);
+    background-color: rgba(204, 204, 179,0.8);
 }
 .btn-two:hover::before {
   transform: rotate(-45deg);
